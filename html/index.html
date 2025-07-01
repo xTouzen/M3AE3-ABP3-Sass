@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Metodología BEM</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div>
+        <a href="index.html" class="header__link">
+          <img
+            src="../assets/img/logo-bem.jpeg"
+            alt="header logo"
+            class="header__logo"
+          />
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item">
+            <a href="index.html" class="header__link">Inicio</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <article class="article">
+        <h1 class="article__title--featured">BEM — Conociendo la metodología</h1>
+        <h2 class="article__subtitle">Qué es BEM</h2>
+        <p class="article__paragraph">
+          La metodología Block, Element, Modifier (comúnmente conocida como BEM)
+          es una convención de nomenclatura popular para clases en HTML y CSS.
+          Desarrollado por el equipo de Yandex, su objetivo es ayudar a los
+          desarrolladores a comprender mejor la relación entre HTML y CSS en un
+          proyecto determinado.
+        </p>
+        <h2 class="article__subtitle">
+          Identificando Bloque, Elemento y Modificador
+        </h2>
+        <p class="article__paragraph">
+          Bloque: Contenedor o etiqueta que dentro de si tiene otros elementos.
+          Elemento: Etiqueta HTML que forma parte de un bloque. Modificador:
+          Característica que permite diferencia elementos dentro de un bloque.
+          Se puede apreciar que un bloque puede ser un elemento de un bloque
+          superior y viceversa.
+        </p>
+        <h2 class="article__subtitle">Por qué usar BEM?</h2>
+        <p class="article__paragraph">
+          Si queremos crear un nuevo estilo de un componente, podemos ver
+          fácilmente qué modificadores y elementos secundarios ya existen.
+          Incluso podríamos darnos cuenta de que no necesitamos escribir ningún
+          CSS en primer lugar porque hay un modificador preexistente que hace lo
+          que necesitamos. Si estamos leyendo el marcado (archivo html) en lugar
+          de CSS, deberíamos poder hacernos una idea rápida de qué elemento
+          depende de otro.Los diseñadores y desarrolladores pueden nombrar los
+          componentes de forma coherente para facilitar la comunicación entre
+          los miembros del equipo. En otras palabras, BEM brinda a todos en un
+          proyecto una sintaxis declarativa que pueden compartir para que estén
+          en la misma página.
+        </p>
+        <img
+          src="../assets/img/img1.jpg"
+          alt="Imagen de ejemplo"
+          class="article__image--border"
+        />
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__info">Contacto: correo@ejemplo.com</div>
+      <div class="footer__social">
+        <a href="#" class="footer__link">Facebook</a>
+        <a href="#" class="footer__link">Twitter</a>
+        <a href="#" class="footer__link">Instagram</a>
+      </div>
+    </footer>
+  </body>
+</html>
