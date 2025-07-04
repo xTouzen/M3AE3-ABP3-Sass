@@ -1,0 +1,6 @@
+// Definir las reglas de tipografía globales
+@use "../abstracts/variables";
+
+body {
+  font-family: variables.$font-main;
+}

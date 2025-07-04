@@ -1,0 +1,43 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: variables.$spacing-lg;
+
+  @include mixins.respond-to(tablet) {
+    padding: variables.$spacing-md;
+  }
+}
+
+.article {
+  &__title {
+    font-size: 2rem;
+    margin-bottom: variables.$spacing-md;
+
+    &--featured {
+      background-color: variables.$color-highlight;
+      border-left: 4px solid variables.$color-accent;
+      padding: variables.$spacing-md;
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: variables.$spacing-md;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+    &--border {
+      border: 4px solid variables.$color-accent;
+    }
+
+    @include mixins.respond-to(tablet) {
+      width: 100%;
+    }
+  }
+}

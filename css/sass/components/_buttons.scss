@@ -1,0 +1,15 @@
+// Estilos específicos para botones, definidos como un componente reutilizable.
+@use "../abstracts/variables";
+
+.button {
+  padding: variables.$spacing-sm variables.$spacing-md;
+  background-color: variables.$color-primary;
+  color: variables.$color-light;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: variables.$color-accent;
+  }
+}

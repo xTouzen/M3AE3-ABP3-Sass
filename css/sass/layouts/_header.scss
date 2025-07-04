@@ -1,0 +1,41 @@
+// Definir los estilos de la cabecera y el pie de página
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.header {
+  background-color: variables.$color-primary;
+  color: variables.$color-light;
+  padding: variables.$spacing-md;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: 70px;
+    object-fit: contain;
+  }
+
+  &__nav {
+    font-weight: bold;
+    display: flex;
+    gap: variables.$spacing-md;
+
+    @include mixins.respond-to(tablet) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__menu {
+    list-style: none;
+    display: flex;
+    gap: variables.$spacing-md;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    color: variables.$color-light;
+    text-decoration: none;
+  }
+}
